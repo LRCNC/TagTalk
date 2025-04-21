@@ -1,0 +1,1 @@
+// Admin route with CRUD UI
