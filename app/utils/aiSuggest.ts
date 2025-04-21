@@ -1,0 +1,1 @@
+// AI stub for message suggestions based on tag and context
