@@ -1,5 +1,6 @@
 {
   "name": "tagtalk-product-message",
   "target": "product",
-  "type": "ui_extension"
+  "type": "ui_extension",
+  "settings": []
 }
