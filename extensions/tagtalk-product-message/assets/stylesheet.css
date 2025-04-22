@@ -1,1 +1,13 @@
-/* Styles for 5 display types: default, compact, badge, alert, divider */
+.tagtalk-block {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tagtalk-style-default { background: #f9f9f9; }
+.tagtalk-style-compact { font-size: 0.875rem; padding: 6px; }
+.tagtalk-style-badge { border-radius: 999px; background: #eee; padding: 4px 12px; }
+.tagtalk-style-alert { background: #ffdddd; border-color: red; }
+.tagtalk-style-divider { border-top: 2px solid #333; padding-top: 10px; }
