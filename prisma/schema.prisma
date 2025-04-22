@@ -1,1 +1,27 @@
-// Updated Prisma schema with A/B test, expiration, private notes
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model TagMessage {
+  id        String   @id @default(uuid())
+  shop      String
+  tag       String
+  message   String
+  style     String
+  icon      String?
+  expiresAt DateTime?
+  note      String?
+  createdAt DateTime @default(now())
+}
+
+model ExcludedDate {
+  id    String   @id @default(uuid())
+  shop  String
+  date  DateTime
+  type  String
+}
