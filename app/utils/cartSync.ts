@@ -1,1 +1,6 @@
-// Syncs TagTalk message as line item property
+export function buildLineItemProperty(tagMessage) {
+  return {
+    key: "_tagtalk_message",
+    value: `${tagMessage.message} | ${tagMessage.style} | ${tagMessage.icon || "none"}`,
+  };
+}
